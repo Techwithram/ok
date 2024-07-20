@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.calculator {
+  background-color: var(--calc-theme);
+  border: 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+button {
+  border: 0;
+  width: 60px;
+  height: 60px;
+  box-shadow: -8px -8px 19px rgba(255, 255, 255, 0.1),
+    5px 5px 19px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: var(--font-color);
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10px;
+}
+div .display1 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+div input {
+  text-align: right;
+  width: auto;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  border: none;
+  background-color: rgb(47, 43, 43);
+  height: 40px;
+  size: 45px;
+  margin-left: 30px;
+}
+button:hover {
+  background-color: rgb(17, 75, 125);
+  color: rgb(206, 206, 20);
+}
+button:active {
+  background-color: rgb(46, 46, 184);
+  color: rgb(212, 206, 19);
+}
+:root {
+  --primary-color: rgb(237, 100, 10);
+  --calc-theme: black;
+  --font-color: white;
+  --icon-color: white;
+}
+.dark-theme {
+  --primary-color: rgb(24, 124, 124);
+  --calc-theme: rgb(237, 223, 223);
+  --font-color: rgb(20, 20, 20);
+  --icon-color: black;
+}
+#Theme {
+  padding: 10px;
+  margin-left: 85rem;
+  background-color: rgb(88, 81, 81);
+  align-items: end;
+  width: auto;
+  margin-top: 0.008rem;
+  display: block;
+}
+.icon {
+  size: 0;
+  padding: 20px;
+  margin: auto;
+}
+#icon {
+  font-size: 50px;
+  margin-right: 20px;
+  margin-left: 60px;
+  color: var(--icon-color);
+}
+.extra {
+  background-color: rgb(16, 238, 64);
+}
+.extra h1 {
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: rgba(4, 54, 78, 0.708);
+  box-shadow: -8px -9px 10px rgba(255, 255, 255, 0.1);
+}
